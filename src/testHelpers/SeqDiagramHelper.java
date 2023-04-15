@@ -1,5 +1,6 @@
 package testHelpers;
 
-public class SeqDiagramHelper {
-
+public interface SeqDiagramHelper {
+    void setVariableName(String n);
+    String getVariableName();
 }

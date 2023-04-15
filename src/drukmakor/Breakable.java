@@ -1,6 +1,11 @@
 package drukmakor;
 
-public class Breakable {
+import testHelpers.SeqDiagramHelper;
+import testHelpers.TestManager;
+
+public class Breakable implements SeqDiagramHelper {
+    private String seqHelperName;
+
     private boolean broken;
     private int capacity;
     private int amount;
@@ -20,4 +25,12 @@ public class Breakable {
         return 0;
     }
 
+    @Override
+    public String getVariableName() {
+        return seqHelperName;
+    }
+    @Override
+    public void setVariableName(String n) {
+        seqHelperName = n;
+    }
 }
